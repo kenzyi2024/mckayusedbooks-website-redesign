@@ -5,6 +5,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>McKay Used Books</title>
 <meta name="description" content="A cozy redesign concept for McKay Used Books — the used-media store in Manassas, VA. Buy, sell and trade books, movies, music, games and puzzles since 1983.">
+<meta name="theme-color" content="#35663F">
+
+<!-- Favicons (McKay's real logo) -->
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="180x180" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Social share (Open Graph + Twitter). At deploy, set og:url and change og:image / twitter:image to an ABSOLUTE https URL. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="McKay Used Books">
+<meta property="og:title" content="McKay Used Books — Reread, Replay, Repeat.">
+<meta property="og:description" content="A cozy used-media store in Manassas, VA. Buy, sell and trade books, movies, music, games and puzzles since 1983.">
+<meta property="og:image" content="images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="McKay's shelves — books arranged by the color of their spines">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="McKay Used Books — Reread, Replay, Repeat.">
+<meta name="twitter:description" content="A cozy used-media store in Manassas, VA. Buy, sell and trade books, movies, music, games and puzzles since 1983.">
+<meta name="twitter:image" content="images/og-image.jpg">
+<meta name="twitter:image:alt" content="McKay's shelves — books arranged by the color of their spines">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Mulish:wght@400;600;700;800&display=swap">
@@ -139,14 +161,14 @@
 
     <div class="wrap" style="padding-top:clamp(42px,5vw,60px)">
       <div style="display:flex;flex-wrap:wrap;gap:10px 16px;align-items:baseline;justify-content:space-between">
-        <div><p class="section-label" style="margin-bottom:4px">Featured finds</p><h2 style="font-size:clamp(22px,3vw,28px);color:var(--ink)">Look what came in</h2></div>
-        <span class="note-demo">Sample layout · staff would post the real ones</span>
+        <div><p class="section-label" style="margin-bottom:4px">Real finds</p><h2 style="font-size:clamp(22px,3vw,28px);color:var(--ink)">Look what's on the shelves</h2></div>
+        <span class="note-demo">Real titles from the photo up top</span>
       </div>
       <div class="finds" style="margin-top:18px">
-        <article class="find"><div class="cover" style="background:#2E3D57"><span class="fmt">Hardcover</span><span class="glyph">†</span></div><div class="fbody"><div class="ftitle">Dune</div><div class="fby">Frank Herbert</div><div class="note">Book-club edition, jacket intact.</div><div class="fmeta"><span class="cond">Very Good</span><span>In store now</span></div></div></article>
-        <article class="find"><div class="cover" style="background:#7A2E39"><span class="fmt">Blu-ray</span><span class="glyph">▶</span></div><div class="fbody"><div class="ftitle">Spirited Away</div><div class="fby">Studio Ghibli</div><div class="note">Collector's set, discs like new.</div><div class="fmeta"><span class="cond">Like New</span><span>In store now</span></div></div></article>
-        <article class="find"><div class="cover" style="background:#3E6B4F"><span class="fmt">Vinyl LP</span><span class="glyph">☼</span></div><div class="fbody"><div class="ftitle">Rumours</div><div class="fby">Fleetwood Mac</div><div class="note">Original pressing, sleeve loved.</div><div class="fmeta"><span class="cond">Good</span><span>In store now</span></div></div></article>
-        <article class="find"><div class="cover" style="background:#B8862F"><span class="fmt">Board game</span><span class="glyph">◆</span></div><div class="fbody"><div class="ftitle">Catan</div><div class="fby">Complete · counted</div><div class="note">All pieces checked at the counter.</div><div class="fmeta"><span class="cond">Very Good</span><span>In store now</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#2E3D57"><span class="fmt">Hardcover</span><span class="glyph">T</span></div><div class="fbody"><div class="ftitle">True Faith and Allegiance</div><div class="fby">Tom Clancy &amp; Mark Greaney</div><div class="fmeta"><span class="cond">Thriller</span><span>Blue shelf</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#3B3A6B"><span class="fmt">Anthology</span><span class="glyph">Y</span></div><div class="fbody"><div class="ftitle">The Year's Best Science Fiction</div><div class="fby">Gardner Dozois, ed.</div><div class="fmeta"><span class="cond">Sci-Fi</span><span>Blue shelf</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#B8862F"><span class="fmt">Hardcover</span><span class="glyph">R</span></div><div class="fbody"><div class="ftitle">Run, Rose, Run</div><div class="fby">Dolly Parton &amp; James Patterson</div><div class="fmeta"><span class="cond">Fiction</span><span>Gold shelf</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#A6402B"><span class="fmt">Hardcover</span><span class="glyph">S</span></div><div class="fbody"><div class="ftitle">The Spy</div><div class="fby">Clive Cussler &amp; Justin Scott</div><div class="fmeta"><span class="cond">Adventure</span><span>Red shelf</span></div></div></article>
       </div>
     </div>
 
@@ -373,15 +395,15 @@
 
     <div class="section">
       <div style="display:flex;flex-wrap:wrap;gap:10px 16px;align-items:baseline;justify-content:space-between">
-        <div><p class="section-label" style="margin-bottom:4px">Featured finds</p><h2 style="font-size:clamp(22px,3vw,28px);color:var(--ink)">A few things worth the trip</h2></div>
-        <span class="note-demo">Sample layout · staff would post the real ones</span>
+        <div><p class="section-label" style="margin-bottom:4px">Real finds</p><h2 style="font-size:clamp(22px,3vw,28px);color:var(--ink)">A few things worth the trip</h2></div>
+        <span class="note-demo">Real titles, spotted in the stacks</span>
       </div>
-      <p style="max-width:60ch;color:var(--ink-soft);margin-top:10px">We don't keep an online catalog — inventory turns over by the thousands every day, so any list would be wrong by lunch. Instead, staff highlight a handful of standout arrivals. Here's how that looks:</p>
+      <p style="max-width:62ch;color:var(--ink-soft);margin-top:10px">We don't keep an online catalog — stock turns over by the thousands every day, so any list would be wrong by lunch. But these are real titles pulled straight from the shelves in the photo above: the treasure hunt is real, even if this exact copy has already found a home.</p>
       <div class="finds" style="margin-top:18px">
-        <article class="find"><div class="cover" style="background:#B8862F"><span class="fmt">Hardcover</span><span class="glyph">§</span></div><div class="fbody"><div class="ftitle">The Complete Calvin &amp; Hobbes</div><div class="fby">Bill Watterson</div><div class="note">Box set, spines tight.</div><div class="fmeta"><span class="cond">Very Good</span><span>In store now</span></div></div></article>
-        <article class="find"><div class="cover" style="background:#2E3D57"><span class="fmt">Game</span><span class="glyph">✦</span></div><div class="fbody"><div class="ftitle">The Legend of Zelda</div><div class="fby">Cartridge · tested</div><div class="note">Save battery still holds.</div><div class="fmeta"><span class="cond">Good</span><span>In store now</span></div></div></article>
-        <article class="find"><div class="cover" style="background:#7A2E39"><span class="fmt">DVD</span><span class="glyph">▶</span></div><div class="fbody"><div class="ftitle">Cowboy Bebop</div><div class="fby">Complete series</div><div class="note">All discs, original case.</div><div class="fmeta"><span class="cond">Like New</span><span>In store now</span></div></div></article>
-        <article class="find"><div class="cover" style="background:#3E6B4F"><span class="fmt">Vinyl LP</span><span class="glyph">☼</span></div><div class="fbody"><div class="ftitle">Kind of Blue</div><div class="fby">Miles Davis</div><div class="note">Reissue, clean grooves.</div><div class="fmeta"><span class="cond">Very Good</span><span>In store now</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#C9922E"><span class="fmt">Paperback</span><span class="glyph">F</span></div><div class="fbody"><div class="ftitle">The Fae Keeper</div><div class="fby">H.E. Edgmon</div><div class="fmeta"><span class="cond">YA Fantasy</span><span>Gold shelf</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#34506E"><span class="fmt">Hardcover</span><span class="glyph">O</span></div><div class="fbody"><div class="ftitle">Olive, Again</div><div class="fby">Elizabeth Strout</div><div class="fmeta"><span class="cond">Literary</span><span>Blue shelf</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#A8781E"><span class="fmt">Paperback</span><span class="glyph">M</span></div><div class="fbody"><div class="ftitle">My So-Called Bollywood Life</div><div class="fby">Nisha Sharma</div><div class="fmeta"><span class="cond">YA Romance</span><span>Gold shelf</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#BE8B33"><span class="fmt">Hardcover</span><span class="glyph">P</span></div><div class="fbody"><div class="ftitle">The Perfect Couple</div><div class="fby">Elin Hilderbrand</div><div class="fmeta"><span class="cond">Fiction</span><span>Gold shelf</span></div></div></article>
       </div>
     </div>
 
@@ -427,10 +449,46 @@
     </div>
 
     <div class="section">
-      <div class="callout">
-        <div class="lead">Are you a local author?</div>
-        <p>McKay hosts signings and meet-and-greets for area writers. In the live site, this is where a short "request an event" form or contact would live, so authors can reach the store directly.</p>
-        <div class="btnrow"><a class="btn btn-primary" href="#faq">Get in touch <span class="arw">→</span></a></div>
+      <p class="section-label">Are you a local author?</p>
+      <h2 style="font-size:clamp(24px,3.4vw,32px);color:var(--ink)">Request an event</h2>
+      <p style="max-width:60ch;color:var(--ink-soft);margin:8px 0 4px">McKay hosts signings and meet-and-greets for area writers. Tell us a little about what you have in mind and the events team will be in touch.</p>
+      <div class="formcard" style="margin-top:18px">
+        <form class="eform" onsubmit="return false" aria-label="Request an author event (prototype)">
+          <div>
+            <label for="ev-name">Your name</label>
+            <input id="ev-name" name="name" type="text" autocomplete="name" placeholder="Jordan Rivera" required>
+          </div>
+          <div>
+            <label for="ev-email">Email</label>
+            <input id="ev-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          </div>
+          <div>
+            <label for="ev-type">What are you proposing?</label>
+            <select id="ev-type" name="type">
+              <option>Author signing</option>
+              <option>Meet-and-greet</option>
+              <option>Local author showcase</option>
+              <option>Reading or workshop</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div>
+            <label for="ev-book">Book or topic</label>
+            <input id="ev-book" name="book" type="text" placeholder="Title, series, or subject">
+          </div>
+          <div class="full">
+            <label for="ev-date">Preferred date <span style="font-weight:400;color:var(--ink-faint)">(optional)</span></label>
+            <input id="ev-date" name="date" type="date">
+          </div>
+          <div class="full">
+            <label for="ev-msg">Anything else?</label>
+            <textarea id="ev-msg" name="message" placeholder="Audience, format, how many books you'd bring, links to your work…"></textarea>
+          </div>
+          <div class="actions">
+            <button class="btn btn-primary" type="submit">Send request <span class="arw">→</span></button>
+            <span class="news-note" style="margin:0">Prototype form — not yet wired to the store. <span class="tbc">to confirm</span> the real destination (email or booking).</span>
+          </div>
+        </form>
       </div>
     </div>
   </section>

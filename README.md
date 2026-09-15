@@ -11,7 +11,7 @@ An interactive, responsive prototype for **McKay Used Books** (8345 Sudley Road,
 | `index.html` | The whole prototype — 7 client‑side‑routed destinations in one page. |
 | `styles.css` | The design system + every component. |
 | `app.js` | Hash routing, the mobile nav, and the live "Open now" clock. |
-| `images/` | McKay's real logo + store photography (from mckayusedbooks.com). |
+| `images/` | McKay's real logo, store photography, generated favicons, and a 1200×630 social-share image. |
 | `.claude/launch.json` | Local static‑server config for previewing. |
 
 The seven destinations: **Home · Visit · Sell & Trade · What We Sell · Events · About · FAQ**.
@@ -33,6 +33,9 @@ Then open <http://localhost:4599>. (Opening `index.html` via `file://` won't loa
 - **Type** — Fraunces (display), Newsreader (reading body), Mulish (friendly UI labels/nav/buttons — replaced the old monospace "card‑catalog" look, which read as too techy).
 - **Imagery** — the real McKay logo (cat + recycle arrows) in the header, hero and footer; the color‑sorted‑shelves photo as the hero; the Check‑In counter on Sell & Trade; store aisles on the cozy bands.
 - **Map** — the Visit page embeds a **real Google Map** to 8345 Sudley Rd, with an address + "Open in Google Maps" fallback behind it (in case a sandbox blocks the iframe).
+- **Featured finds** — real titles pulled from McKay's own shelf photo (e.g. *True Faith and Allegiance*, *Run, Rose, Run*, *The Fae Keeper*, *Olive, Again*), framed honestly as a shelf snapshot, not fake live stock.
+- **Author events** — the Events page has a "Request an event" form for local authors (prototype; not yet wired to a destination).
+- **Favicon & social preview** — favicons and Open Graph / Twitter Card meta are wired into `index.html`, using the real logo and the color-sorted-shelves share image (`images/og-image.jpg`).
 
 ## Verified facts baked in
 
@@ -49,6 +52,8 @@ Then open <http://localhost:4599>. (Opening `index.html` via `file://` won't loa
 - Real event dates & details (the Events cards show the *format*; copy is illustrative).
 - Real founding story & milestones for About, and real Featured‑Find photos (currently clearly‑labeled samples).
 - Real off‑site URLs for Gift Cards (Square), Shirts (Bonfire), Bookshop.org, and the social accounts.
+- The author "request an event" form's real destination (email address or booking link).
+- At deploy: set `og:url` and change `og:image` / `twitter:image` to an absolute `https://` URL (they're relative paths in the prototype).
 
 ## Image credits
 

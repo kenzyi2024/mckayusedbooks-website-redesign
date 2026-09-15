@@ -332,6 +332,18 @@ details.qa .ans p{margin:0 0 .7em}
 .news-form input[type=email]::placeholder{color:var(--ink-faint)}
 .news-note{font-family:"Mulish",sans-serif;font-size:13px;color:var(--ink-faint);margin-top:10px}
 
+/* ---- Event request form -------------------------------------------------- */
+.formcard{background:var(--card);border:1px solid var(--rule);border-radius:var(--radius);padding:clamp(22px,3.5vw,32px)}
+.eform{display:grid;grid-template-columns:1fr 1fr;gap:14px 16px;margin-top:16px}
+.eform .full{grid-column:1/-1}
+.eform label{display:block;font-family:"Mulish",sans-serif;font-weight:700;font-size:13px;color:var(--ink-soft);margin-bottom:6px}
+.eform input,.eform select,.eform textarea{width:100%;padding:11px 14px;border-radius:10px;border:1.5px solid var(--rule);background:var(--bg);color:var(--ink);font-family:"Mulish",sans-serif;font-size:15px}
+.eform textarea{min-height:104px;resize:vertical;font-family:"Newsreader",serif;font-size:16px;line-height:1.5}
+.eform input::placeholder,.eform textarea::placeholder{color:var(--ink-faint)}
+.eform input:focus,.eform select:focus,.eform textarea:focus{outline:2.5px solid var(--amber);outline-offset:2px}
+.eform .actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:2px}
+@media(max-width:560px){.eform{grid-template-columns:1fr}}
+
 /* off-site marker */
 .ext::after{content:"↗";font-size:.82em;margin-left:.28em;color:var(--ink-faint)}
 
