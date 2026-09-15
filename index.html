@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>McKay Used Books</title>
+<meta name="description" content="A cozy redesign concept for McKay Used Books — the used-media store in Manassas, VA. Buy, sell and trade books, movies, music, games and puzzles since 1983.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Mulish:wght@400;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+
+<div class="proto" role="note">
+  <div class="inner"><span class="leaf"></span><b>Prototype</b> · a cozy redesign concept for McKay Used Books — not the live site. A few details are marked <span class="tbc">to confirm</span> with the store.</div>
+</div>
+
+<header class="site-header">
+  <div class="bar">
+    <a class="brand" href="#home" aria-label="McKay Used Books — home">
+      <img src="images/mckay-logo.png" alt="McKay Used Books logo — a cat and recycle arrows">
+      <span>
+        <span class="name">McKay Used Books</span>
+        <span class="sub u">Manassas, VA · Since 1983</span>
+      </span>
+    </a>
+    <button class="hamburger" id="nav-toggle" aria-label="Menu" aria-controls="primary-nav" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a href="#visit" data-nav>Visit</a>
+      <a href="#sell-trade" data-nav>Sell &amp; Trade</a>
+      <a href="#what-we-sell" data-nav>What We Sell</a>
+      <a href="#events" data-nav>Events</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#faq" data-nav>FAQ</a>
+    </nav>
+    <a class="header-cta" href="#visit">Plan a visit</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============================ HOME ============================ -->
+  <section id="home" class="page" aria-label="Home" style="padding-top:0">
+    <div class="hero">
+      <div class="inner">
+        <div class="hero-copy">
+          <div class="logo-lockup">
+            <img src="images/mckay-logo.png" alt="McKay Used Books logo">
+            <span class="est">The used-media store in<br><b>Manassas, Virginia</b></span>
+          </div>
+          <h1>Reread, <span class="replay">Replay,</span> <span class="thin">Repeat.</span></h1>
+          <p class="dek">A big, warm room full of second-hand books, movies, music and games — where the things you've finished become credit toward the things you haven't. Come get pleasantly lost in the stacks.</p>
+          <div class="btnrow">
+            <a class="btn btn-primary" href="#visit">Plan your visit <span class="arw">→</span></a>
+            <a class="btn btn-ghost" href="#sell-trade">How trading works</a>
+          </div>
+          <div class="openrow">
+            <span class="pill is-plain" data-openpill><span class="dot"></span><span data-openlabel>Checking hours…</span></span>
+            <span class="todayline">Today · <b data-today>every day</b> — shop 9–8 · trade 9–7</span>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="images/store-shelves.jpg" alt="McKay's shelves — hardcover books arranged by the color of their spines, from blues to golds to reds, on warm wooden shelving" loading="eager">
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap" style="padding-top:clamp(36px,5vw,54px)">
+      <p class="section-label">Where would you like to start?</p>
+      <div class="doors">
+        <a class="door" href="#visit">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+          <h3>Visit</h3>
+          <p>Today's hours, the map, and directions to the one and only location.</p>
+          <span class="go">Hours &amp; map →</span>
+        </a>
+        <a class="door" href="#sell-trade">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></span>
+          <h3>Sell &amp; Trade</h3>
+          <p>Turn the books and media you're done with into store credit.</p>
+          <span class="go">How it works →</span>
+        </a>
+        <a class="door" href="#what-we-sell">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5h5.5v15H6A1.5 1.5 0 0 1 4.5 18V6A1.5 1.5 0 0 1 6 4.5ZM13.5 4.5H18A1.5 1.5 0 0 1 19.5 6v12a1.5 1.5 0 0 1-1.5 1.5h-4.5Z"/><path d="M10.5 4.5v15"/></svg></span>
+          <h3>What We Sell</h3>
+          <p>Not just books — movies, music, games and more, sorted by color.</p>
+          <span class="go">Browse the store →</span>
+        </a>
+        <a class="door" href="#events">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3.5v3M16 3.5v3"/></svg></span>
+          <h3>Events</h3>
+          <p>Author signings, seasonal happenings, and the store's local life.</p>
+          <span class="go">What's on →</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="wrap" style="padding-top:clamp(38px,5vw,56px)">
+      <p class="section-label">It says "books" on the sign — it's much more than books</p>
+      <div class="strip">
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5h5.5v15H6A1.5 1.5 0 0 1 4.5 18V6A1.5 1.5 0 0 1 6 4.5ZM13.5 4.5H18A1.5 1.5 0 0 1 19.5 6v12a1.5 1.5 0 0 1-1.5 1.5h-4.5Z"/></svg>Books</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M8 5.5v13M16 5.5v13M3.5 12h17"/></svg>Movies</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.2"/></svg>Music</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7.5" width="19" height="9" rx="4.5"/><path d="M7 10.5v3M5.5 12h3M15.5 11.5h.01M18 13h.01"/></svg>Video Games</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="4.5" width="15" height="15" rx="3"/><path d="M9 9h.01M15 9h.01M12 12h.01M9 15h.01M15 15h.01"/></svg>Tabletop &amp; RPG</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Puzzles &amp; more</span>
+      </div>
+    </div>
+
+    <div class="wrap" style="padding-top:clamp(42px,5vw,60px)">
+      <div class="about-grid">
+        <div>
+          <p class="section-label">Why people keep coming back</p>
+          <h2 style="font-size:clamp(26px,3.6vw,34px);color:var(--ink)">The fun is in the finding</h2>
+          <p style="color:var(--ink-soft);margin-top:12px">McKay's shelves are arranged by the color of the spine, not just the author's name — so a wall of blue gives way to gold, then red, and browsing turns into a treasure hunt. You come in for one thing and leave with an armful you didn't know existed. Forty years in, it's still the whole point.</p>
+          <div class="btnrow" style="margin-top:16px"><a class="btn btn-ghost" href="#what-we-sell">See what's in store <span class="arw">→</span></a></div>
+        </div>
+        <div class="photo frame" style="aspect-ratio:4/3">
+          <img src="images/store-aisle.jpg" alt="An aisle inside McKay lined floor-to-ceiling with color-sorted books">
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap" style="padding-top:clamp(42px,5vw,60px)">
+      <p class="section-label">The best reason to clean off your shelves</p>
+      <h2 style="font-size:clamp(25px,3.4vw,32px);max-width:22ch;color:var(--ink)">Bring a box. Leave with credit.</h2>
+      <div class="steps" style="margin-top:20px">
+        <div class="step"><div class="n">1</div><h4>Bring it in</h4><p>Boxes and bags of books, movies, music and games — no appointment.</p></div>
+        <div class="step"><div class="n">2</div><h4>Shop while we sort</h4><p>Hand it to check-in and go browse. Our buyers work through your box.</p></div>
+        <div class="step"><div class="n">3</div><h4>Get your offer</h4><p>What we can use becomes trade credit — there are two friendly kinds.</p></div>
+        <div class="step"><div class="n">4</div><h4>Spend it or save it</h4><p>Use it on today's finds, or keep it on your account for next time.</p></div>
+      </div>
+      <div class="btnrow" style="margin-top:18px"><a class="btn btn-ghost" href="#sell-trade">See what we take &amp; how credit works <span class="arw">→</span></a></div>
+    </div>
+
+    <div class="wrap" style="padding-top:clamp(42px,5vw,60px)">
+      <div style="display:flex;flex-wrap:wrap;gap:10px 16px;align-items:baseline;justify-content:space-between">
+        <div><p class="section-label" style="margin-bottom:4px">Featured finds</p><h2 style="font-size:clamp(22px,3vw,28px);color:var(--ink)">Look what came in</h2></div>
+        <span class="note-demo">Sample layout · staff would post the real ones</span>
+      </div>
+      <div class="finds" style="margin-top:18px">
+        <article class="find"><div class="cover" style="background:#2E3D57"><span class="fmt">Hardcover</span><span class="glyph">†</span></div><div class="fbody"><div class="ftitle">Dune</div><div class="fby">Frank Herbert</div><div class="note">Book-club edition, jacket intact.</div><div class="fmeta"><span class="cond">Very Good</span><span>In store now</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#7A2E39"><span class="fmt">Blu-ray</span><span class="glyph">▶</span></div><div class="fbody"><div class="ftitle">Spirited Away</div><div class="fby">Studio Ghibli</div><div class="note">Collector's set, discs like new.</div><div class="fmeta"><span class="cond">Like New</span><span>In store now</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#3E6B4F"><span class="fmt">Vinyl LP</span><span class="glyph">☼</span></div><div class="fbody"><div class="ftitle">Rumours</div><div class="fby">Fleetwood Mac</div><div class="note">Original pressing, sleeve loved.</div><div class="fmeta"><span class="cond">Good</span><span>In store now</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#B8862F"><span class="fmt">Board game</span><span class="glyph">◆</span></div><div class="fbody"><div class="ftitle">Catan</div><div class="fby">Complete · counted</div><div class="note">All pieces checked at the counter.</div><div class="fmeta"><span class="cond">Very Good</span><span>In store now</span></div></div></article>
+      </div>
+    </div>
+
+    <div class="wrap" style="padding-top:clamp(42px,5vw,60px);padding-bottom:clamp(30px,4vw,42px)">
+      <div class="newsletter">
+        <p class="section-label" style="margin-bottom:8px">Occasional, we promise</p>
+        <h3>Get the good finds in your inbox</h3>
+        <p style="color:var(--ink-soft);max-width:52ch;margin:0">New arrivals worth a trip, events, and the odd store story — sent only when there's something worth telling.</p>
+        <form class="news-form" onsubmit="return false" aria-label="Newsletter sign-up (prototype)">
+          <label for="news-email" style="position:absolute;left:-9999px">Email address</label>
+          <input id="news-email" type="email" placeholder="you@example.com" autocomplete="email">
+          <button class="btn btn-primary" type="submit">Sign up</button>
+        </form>
+        <p class="news-note">Prototype form — not yet wired to a mailing list.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ VISIT ============================ -->
+  <section id="visit" class="page" aria-label="Visit" hidden>
+    <div class="page-head">
+      <p class="eyebrow">Plan your visit</p>
+      <h1>Come find us in Manassas</h1>
+      <p class="lede">One store, open every day. Here's when we're open, where we are, and how to get in the door.</p>
+    </div>
+
+    <div class="section">
+      <div class="visit-grid">
+        <div class="map-card">
+          <div class="map-poster">
+            <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7.5-6 7.5-12a7.5 7.5 0 1 0-15 0c0 6 7.5 12 7.5 12Z"/><circle cx="12" cy="10" r="2.7"/></svg>
+            <div class="addr">8345 Sudley Road, Manassas, VA</div>
+            <a class="ext" href="https://www.google.com/maps/search/?api=1&amp;query=McKay+Used+Books+Manassas+VA" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+          <iframe title="Map to McKay Used Books, 8345 Sudley Road, Manassas VA" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=McKay+Used+Books,+8345+Sudley+Rd,+Manassas,+VA+20109&output=embed"></iframe>
+        </div>
+
+        <div class="visit-facts">
+          <dl>
+            <dt>Address</dt><dd><span class="addr">8345 Sudley Road</span><br>Manassas, Virginia 20109</dd>
+            <dt>Shop</dt><dd>9:00 AM – 8:00 PM, every day</dd>
+            <dt>Trade</dt><dd>9:00 AM – 7:00 PM, every day</dd>
+            <dt>Parking</dt><dd>Free lot on site <span class="tbc">to confirm</span></dd>
+            <dt>Only location</dt><dd>McKay has one store — this is it.</dd>
+          </dl>
+          <div class="btnrow" style="margin-top:18px">
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=8345+Sudley+Rd+Manassas+VA+20109" target="_blank" rel="noopener">Get directions <span class="arw">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="hours-card">
+        <div class="headline">
+          <span class="pill is-plain" data-openpill><span class="dot"></span><span data-openlabel>Checking hours…</span></span>
+          <h2 style="font-size:20px;color:var(--ink)">This week</h2>
+        </div>
+        <table class="week">
+          <tbody>
+            <tr data-day="Sunday"><td>Sunday</td><td>Shop 9–8 · Trade 9–7</td></tr>
+            <tr data-day="Monday"><td>Monday</td><td>Shop 9–8 · Trade 9–7</td></tr>
+            <tr data-day="Tuesday"><td>Tuesday</td><td>Shop 9–8 · Trade 9–7</td></tr>
+            <tr data-day="Wednesday"><td>Wednesday</td><td>Shop 9–8 · Trade 9–7</td></tr>
+            <tr data-day="Thursday"><td>Thursday</td><td>Shop 9–8 · Trade 9–7</td></tr>
+            <tr data-day="Friday"><td>Friday</td><td>Shop 9–8 · Trade 9–7</td></tr>
+            <tr data-day="Saturday"><td>Saturday</td><td>Shop 9–8 · Trade 9–7</td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:14px;color:var(--ink-faint);margin:14px 0 0"><span class="tbc">to confirm</span> Holiday hours (New Year's, Thanksgiving, Christmas and the like) would follow the store's real exceptions — the live status above already tracks the daily hours in store time.</p>
+      </div>
+
+      <div class="callout">
+        <div class="lead">One location, on purpose.</div>
+        <p>McKay is a single, enormous store — not a chain. That's why the whole place fits under one roof and the shelves run so deep. If a map or listing points you to another "McKay," this Manassas address is the one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================= SELL & TRADE ========================= -->
+  <section id="sell-trade" class="page" aria-label="Sell and Trade" hidden>
+    <div class="page-head">
+      <p class="eyebrow">Sell &amp; Trade</p>
+      <h1>Bring a box. Leave with credit.</h1>
+      <p class="lede">The heart of how McKay works: bring in the books and media you're finished with, and walk out with credit toward your next find. No appointment, no shipping, no waiting on an offer by email.</p>
+    </div>
+
+    <div class="section">
+      <div class="about-grid">
+        <div>
+          <p class="section-label">How it works</p>
+          <p style="color:var(--ink-soft);margin-top:6px">Drop your items at the <strong>Check-In</strong> counter, get a claim ticket, and go shop while our buyers sort through everything. Come back for your offer — it's that simple.</p>
+        </div>
+        <div class="photo frame" style="aspect-ratio:4/3">
+          <img src="images/store-trade.jpg" alt="A staff member at McKay's Check-In counter with a scanner and a green trade bin">
+        </div>
+      </div>
+      <div class="steps" style="margin-top:26px">
+        <div class="step"><div class="n">1</div><h4>Bring it in</h4><p>Books, movies, music, games and puzzles — boxes and bags welcome, during trade hours (9–7).</p></div>
+        <div class="step"><div class="n">2</div><h4>Shop while we sort</h4><p>Hand your items to Check-In, take your claim ticket, and browse the store while our buyers work through them.</p></div>
+        <div class="step"><div class="n">3</div><h4>Get your offer</h4><p>What we can use is turned into trade credit — McKay uses two kinds, depending on what you brought.</p></div>
+        <div class="step"><div class="n">4</div><h4>Spend it or save it</h4><p>Put it toward today's haul or keep it on your account. It's there waiting next time.</p></div>
+      </div>
+      <p style="font-size:14px;color:var(--ink-faint);margin-top:12px"><span class="tbc">to confirm</span> Exact payout rates, bin limits, and whether cash is offered alongside credit come from the store.</p>
+    </div>
+
+    <div class="section">
+      <p class="section-label">The two kinds of trade credit</p>
+      <div class="trade-types">
+        <div class="tt" style="--accent:#2E6F9E">
+          <span class="lbl"><span class="coin" style="--coin:#2E6F9E"></span>Blue trade</span>
+          <h4>Earned on books &amp; VHS</h4>
+          <p>Trade in books and VHS tapes and you earn <strong>blue trade</strong>.</p>
+          <div class="flow"><span>You bring &nbsp;<b>Books · VHS</b></span><span>You spend it on &nbsp;<b>Books</b></span></div>
+        </div>
+        <div class="tt" style="--accent:var(--green)">
+          <span class="lbl"><span class="coin" style="--coin:transparent"></span>White trade</span>
+          <h4>Earned on DVDs, CDs &amp; audiobooks</h4>
+          <p>Trade in DVDs, CDs and audiobooks and you earn <strong>white trade</strong>.</p>
+          <div class="flow"><span>You bring &nbsp;<b>DVDs · CDs · Audiobooks</b></span><span>You spend it on &nbsp;<b>Anything in the store</b></span></div>
+        </div>
+      </div>
+      <div class="callout">
+        <div class="lead">Why two colors?</div>
+        <p>It's McKay's real system: <strong>blue trade</strong> buys books, and <strong>white trade</strong> — the more flexible kind — buys anything on the floor, from a graphic novel to a board game. Your receipt tells you what you've got. <span class="tbc">to confirm</span> the full category rules for each color.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <p class="section-label">What we take</p>
+      <div class="takes">
+        <div class="panel yes">
+          <h4>Usually yes</h4>
+          <ul>
+            <li>Fiction &amp; non-fiction, kids' &amp; YA</li>
+            <li>Comics &amp; graphic novels</li>
+            <li>DVDs &amp; Blu-rays</li>
+            <li>CDs &amp; vinyl</li>
+            <li>Video games — and now consoles</li>
+            <li>Board &amp; tabletop games, RPG books</li>
+            <li>Puzzles &amp; more</li>
+          </ul>
+        </div>
+        <div class="panel no">
+          <h4>Sometimes we can't</h4>
+          <ul>
+            <li>Heavily damaged, mildewed or water-stained items</li>
+            <li>Ex-library and marked-up copies</li>
+            <li>Certain textbook editions and formats</li>
+          </ul>
+          <p style="font-size:13.5px;color:var(--ink-faint);margin:10px 0 0"><span class="tbc">to confirm</span> the store's exact do-not-take list — when in doubt, bring it and ask.</p>
+        </div>
+      </div>
+      <div class="callout amber">
+        <div class="lead">Moving, downsizing, or clearing an estate?</div>
+        <p>Large trades are welcome — a whole collection, a garage's worth, a lifetime of paperbacks. For a big load it helps to give the store a heads-up so a buyer is ready for you. <span class="tbc">to confirm</span> large-order details.</p>
+      </div>
+      <div class="btnrow"><a class="btn btn-ghost" href="#faq">Read the trading FAQs <span class="arw">→</span></a></div>
+    </div>
+  </section>
+
+  <!-- ========================= WHAT WE SELL ========================= -->
+  <section id="what-we-sell" class="page" aria-label="What We Sell" hidden>
+    <div class="page-head">
+      <p class="eyebrow">What we sell</p>
+      <h1>Hundreds of thousands of finds, sorted by color</h1>
+      <p class="lede">McKay isn't a bookshop that dabbles — it's a whole used-media store. Books are the heart of it, but the shelves run through movies, music, games and more, famously arranged by color so browsing feels like a treasure hunt.</p>
+    </div>
+
+    <div class="section">
+      <div class="depts">
+        <div class="dept">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5h5.5v15H6A1.5 1.5 0 0 1 4.5 18V6A1.5 1.5 0 0 1 6 4.5ZM13.5 4.5H18A1.5 1.5 0 0 1 19.5 6v12a1.5 1.5 0 0 1-1.5 1.5h-4.5Z"/></svg></span>
+          <h3>Books</h3>
+          <p>Fiction, non-fiction, and everything in between — wall after wall of it.</p>
+          <div class="finds">Literature · Sci-fi &amp; fantasy · Mystery · Romance · History · Cooking · Kids &amp; YA · Comics &amp; graphic novels</div>
+        </div>
+        <div class="dept">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M8 5.5v13M16 5.5v13M3.5 12h17"/></svg></span>
+          <h3>Movies</h3>
+          <p>DVDs, Blu-rays, and the occasional VHS for the purists.</p>
+          <div class="finds">New releases to cult classics · Box sets · Anime · Documentary · TV seasons</div>
+        </div>
+        <div class="dept">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.2"/></svg></span>
+          <h3>Music</h3>
+          <p>A deep vinyl bin and shelves of CDs — plus audiobooks.</p>
+          <div class="finds">Vinyl LPs · CDs · Audiobooks · Soundtracks</div>
+        </div>
+        <div class="dept">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7.5" width="19" height="9" rx="4.5"/><path d="M7 10.5v3M5.5 12h3M15.5 11.5h.01M18 13h.01"/></svg></span>
+          <h3>Video Games</h3>
+          <p>Carts, discs and — now — consoles, across the generations.</p>
+          <div class="finds">Retro to current-gen · Consoles · Strategy guides · Accessories</div>
+        </div>
+        <div class="dept">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="4.5" width="15" height="15" rx="3"/><path d="M9 9h.01M15 9h.01M12 12h.01M9 15h.01M15 15h.01"/></svg></span>
+          <h3>Tabletop &amp; RPG</h3>
+          <p>Board games, card games, and shelves of role-playing material.</p>
+          <div class="finds">Board &amp; family games · RPG core books &amp; modules · Card games</div>
+        </div>
+        <div class="dept">
+          <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg></span>
+          <h3>More to dig through</h3>
+          <p>The odds and ends that make it a treasure hunt.</p>
+          <div class="finds">Puzzles · Legos · Action figures · Funko Pops</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="about-grid">
+        <div class="photo frame" style="aspect-ratio:3/4;max-height:520px">
+          <img src="images/store-shelves.jpg" alt="Books on McKay's shelves grouped by spine color — blues, then golds, then reds">
+        </div>
+        <div>
+          <div class="callout" style="margin-top:0">
+            <div class="lead">Yes — really sorted by color.</div>
+            <p>McKay's shelves are organized by the color of the spine, not just the author's name. It sounds chaotic and it's oddly wonderful: you wander a wall of blue into gold into red, and leave with five things you didn't come for. That's the whole experience — and it's where this site's warm palette comes from.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div style="display:flex;flex-wrap:wrap;gap:10px 16px;align-items:baseline;justify-content:space-between">
+        <div><p class="section-label" style="margin-bottom:4px">Featured finds</p><h2 style="font-size:clamp(22px,3vw,28px);color:var(--ink)">A few things worth the trip</h2></div>
+        <span class="note-demo">Sample layout · staff would post the real ones</span>
+      </div>
+      <p style="max-width:60ch;color:var(--ink-soft);margin-top:10px">We don't keep an online catalog — inventory turns over by the thousands every day, so any list would be wrong by lunch. Instead, staff highlight a handful of standout arrivals. Here's how that looks:</p>
+      <div class="finds" style="margin-top:18px">
+        <article class="find"><div class="cover" style="background:#B8862F"><span class="fmt">Hardcover</span><span class="glyph">§</span></div><div class="fbody"><div class="ftitle">The Complete Calvin &amp; Hobbes</div><div class="fby">Bill Watterson</div><div class="note">Box set, spines tight.</div><div class="fmeta"><span class="cond">Very Good</span><span>In store now</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#2E3D57"><span class="fmt">Game</span><span class="glyph">✦</span></div><div class="fbody"><div class="ftitle">The Legend of Zelda</div><div class="fby">Cartridge · tested</div><div class="note">Save battery still holds.</div><div class="fmeta"><span class="cond">Good</span><span>In store now</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#7A2E39"><span class="fmt">DVD</span><span class="glyph">▶</span></div><div class="fbody"><div class="ftitle">Cowboy Bebop</div><div class="fby">Complete series</div><div class="note">All discs, original case.</div><div class="fmeta"><span class="cond">Like New</span><span>In store now</span></div></div></article>
+        <article class="find"><div class="cover" style="background:#3E6B4F"><span class="fmt">Vinyl LP</span><span class="glyph">☼</span></div><div class="fbody"><div class="ftitle">Kind of Blue</div><div class="fby">Miles Davis</div><div class="note">Reissue, clean grooves.</div><div class="fmeta"><span class="cond">Very Good</span><span>In store now</span></div></div></article>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="callout amber">
+        <div class="lead">Looking for one specific title?</div>
+        <p>Because there's no live inventory online, we can't promise a particular book is on the shelf right now — that's the honest truth of a store this size. Your best moves: give the store a call, or just come browse (finding it yourself is half the fun). For <em>new</em> books, McKay's <a class="ext" href="#faq">Bookshop.org affiliate</a> can ship — though that's not McKay's used stock.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ EVENTS ============================ -->
+  <section id="events" class="page" aria-label="Events" hidden>
+    <div class="page-head">
+      <p class="eyebrow">Events</p>
+      <h1>More than a store</h1>
+      <p class="lede">Author signings, seasonal happenings, and the small community life of a shop that's been in Manassas for forty years.</p>
+    </div>
+
+    <div class="section">
+      <div style="display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;justify-content:space-between;margin-bottom:16px">
+        <p class="section-label" style="margin:0">Coming up</p>
+        <span class="note-demo">Illustrative — live listings would sync from the store calendar</span>
+      </div>
+      <div class="events">
+        <article class="event">
+          <div class="datechip"><span class="mo">Oct</span><span class="dy">18</span></div>
+          <div class="ebody"><h3>Local Author Saturday</h3><p>Meet Virginia writers, get a book signed, and talk shop with the people who made the thing you're holding.</p><div class="ewhen">Saturday · 1–4 PM · In-store</div></div>
+          <div class="eside"><a class="btn btn-ghost" href="#events">Details</a></div>
+        </article>
+        <article class="event">
+          <div class="datechip"><span class="mo">Oct</span><span class="dy">31</span></div>
+          <div class="ebody"><h3>Book-or-Treat</h3><p>The store's Halloween tradition — costumes welcome, treats on the counter, and a few frightfully good finds.</p><div class="ewhen">Friday · All day · Family-friendly</div></div>
+          <div class="eside"><a class="btn btn-ghost" href="#events">Details</a></div>
+        </article>
+        <article class="event">
+          <div class="datechip"><span class="mo">Nov</span><span class="dy">09</span></div>
+          <div class="ebody"><h3>Big Trade Weekend</h3><p>Clearing your shelves before the holidays? Extra buyers on hand to work through big trades faster.</p><div class="ewhen">Saturday–Sunday · Trade 9–7</div></div>
+          <div class="eside"><a class="btn btn-ghost" href="#sell-trade">How trade works</a></div>
+        </article>
+      </div>
+      <p style="font-size:14px;color:var(--ink-faint);margin-top:14px"><span class="tbc">to confirm</span> Real dates, times and details come from the store — the cards above show the format.</p>
+    </div>
+
+    <div class="section">
+      <div class="callout">
+        <div class="lead">Are you a local author?</div>
+        <p>McKay hosts signings and meet-and-greets for area writers. In the live site, this is where a short "request an event" form or contact would live, so authors can reach the store directly.</p>
+        <div class="btnrow"><a class="btn btn-primary" href="#faq">Get in touch <span class="arw">→</span></a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================ ABOUT ============================ -->
+  <section id="about" class="page" aria-label="About" hidden>
+    <div class="page-head">
+      <p class="eyebrow">Our story</p>
+      <h1>A second life for good stories, since 1983</h1>
+      <p class="lede">For four decades McKay has been Manassas's place to buy, sell and trade the books and media people love — one big room, endlessly restocked by the community that shops it.</p>
+    </div>
+
+    <div class="section">
+      <div class="about-grid">
+        <div class="story">
+          <p>McKay runs on a simple, generous idea: the book you've finished is the book someone else is looking for. Bring in what you're done with, and it becomes credit toward your next discovery. Multiply that by forty years and a whole community, and you get a store with hundreds of thousands of items and a genuinely unpredictable inventory.</p>
+          <p>The shelves are famously sorted by color — a browsing experience closer to a treasure hunt than a search bar. It's why people come in for one thing and leave with an armful, and why McKay has never really needed an online catalog: the finding is the fun.</p>
+        </div>
+        <div class="photo frame" style="aspect-ratio:3/4;max-height:520px">
+          <img src="images/store-aisle.jpg" alt="Inside McKay — a long aisle of color-sorted books under warm light">
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="stat-row">
+        <div class="stat"><div class="big">1983</div><div class="lab">Opened</div></div>
+        <div class="stat"><div class="big">One</div><div class="lab">Location · the only one</div></div>
+        <div class="stat"><div class="big">9–8</div><div class="lab">Open daily</div></div>
+        <div class="stat"><div class="big">100,000s</div><div class="lab">Items on the shelves</div></div>
+      </div>
+      <div class="pullquote">Reread, replay, repeat — the whole store is a loop.</div>
+      <p class="story"><span class="tbc">to confirm</span> The store's own founding details, milestones and photos would make this page sing — this is a warm placeholder written from the public facts.</p>
+    </div>
+  </section>
+
+  <!-- ============================= FAQ ============================= -->
+  <section id="faq" class="page" aria-label="Help and FAQ" hidden>
+    <div class="page-head">
+      <p class="eyebrow">Help &amp; FAQ</p>
+      <h1>Questions, answered once</h1>
+      <p class="lede">Everything the old site split across two overlapping FAQ pages, merged and sorted into three plain sections. Every answer lives in exactly one place.</p>
+    </div>
+
+    <div class="section" style="max-width:820px">
+      <div class="faq-group">
+        <h3>Shopping</h3>
+        <details class="qa"><summary>Do you sell online?<span class="mk">+</span></summary><div class="ans"><p>No — McKay's used inventory is in-store only. The fun (and the honesty) of a store this size is that the shelves change by the hour. For <em>new</em> books, McKay has a <span class="ext">Bookshop.org affiliate</span> that ships, but that's not McKay's used stock.</p></div></details>
+        <details class="qa"><summary>Can you check whether a specific title is in stock?<span class="mk">+</span></summary><div class="ans"><p>There's no live catalog to search, so we can't guarantee a specific title is on the shelf at a given moment. Your best bet is to call the store or come browse — with hundreds of thousands of items turning over daily, an online list would be out of date immediately.</p></div></details>
+        <details class="qa"><summary>What do you carry?<span class="mk">+</span></summary><div class="ans"><p>Books of every kind, movies (DVD, Blu-ray, some VHS), music (CDs and vinyl), video games and consoles, tabletop and RPG games, plus puzzles, Legos, action figures and more. See <a href="#what-we-sell">What We Sell</a> for the full breakdown.</p></div></details>
+      </div>
+      <div class="faq-group">
+        <h3>Trading</h3>
+        <details class="qa"><summary>How does trade credit work?<span class="mk">+</span></summary><div class="ans"><p>Bring in items you're done with and we turn what we can use into store credit. There are two kinds: <strong>blue trade</strong>, earned on books and VHS, which buys books; and <strong>white trade</strong>, earned on DVDs, CDs and audiobooks, which buys anything in the store. See <a href="#sell-trade">Sell &amp; Trade</a> for the full flow.</p></div></details>
+        <details class="qa"><summary>What can I bring in?<span class="mk">+</span></summary><div class="ans"><p>Books, movies, music, video games (and consoles), tabletop games and puzzles are all fair game. Some items we can't take — heavily damaged copies, ex-library books, and certain editions. <span class="tbc">to confirm</span> the exact list; when in doubt, bring it and ask.</p></div></details>
+        <details class="qa"><summary>Do I need an appointment to trade?<span class="mk">+</span></summary><div class="ans"><p>No appointment for a normal trade — bring your box during trade hours (9 AM–7 PM daily), hand it to Check-In, and shop while we sort. For very large loads it helps to give the store a heads-up. <span class="tbc">to confirm</span></p></div></details>
+      </div>
+      <div class="faq-group">
+        <h3>Visiting</h3>
+        <details class="qa"><summary>What are your hours?<span class="mk">+</span></summary><div class="ans"><p>Open to shop <strong>9 AM–8 PM every day</strong>, and open to trade <strong>9 AM–7 PM every day</strong>. The live status on the <a href="#visit">Visit</a> page shows whether we're open right now.</p></div></details>
+        <details class="qa"><summary>Are you open on holidays?<span class="mk">+</span></summary><div class="ans"><p>Hours can change on major holidays. <span class="tbc">to confirm</span> — the live build would show the store's real holiday exceptions automatically.</p></div></details>
+        <details class="qa"><summary>Where are you, and is there parking?<span class="mk">+</span></summary><div class="ans"><p>8345 Sudley Road, Manassas, Virginia 20109 — the only location. On-site parking <span class="tbc">to confirm</span>. Get <a href="https://www.google.com/maps/dir/?api=1&amp;destination=8345+Sudley+Rd+Manassas+VA+20109" target="_blank" rel="noopener">directions ↗</a>.</p></div></details>
+        <details class="qa"><summary>Do you sell gift cards?<span class="mk">+</span></summary><div class="ans"><p>Yes — gift cards are available <span class="ext">through the store's payment partner</span> (off-site) and in person. A perfect gift for the reader who's impossible to shop for.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="cols">
+    <div class="footer-brand">
+      <img src="images/mckay-logo.png" alt="McKay Used Books logo">
+      <div class="name">McKay Used Books</div>
+      <p>One big used-media store in Manassas, Virginia — buy, sell and trade, since 1983. Reread, replay, repeat.</p>
+      <p class="u" style="font-size:12.5px;color:#8F846A;margin-top:12px">8345 Sudley Road<br>Manassas, VA 20109</p>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <nav class="footer-nav" aria-label="Footer">
+        <a href="#visit">Visit</a>
+        <a href="#sell-trade">Sell &amp; Trade</a>
+        <a href="#what-we-sell">What We Sell</a>
+        <a href="#events">Events</a>
+        <a href="#about">About</a>
+        <a href="#faq">Help &amp; FAQ</a>
+      </nav>
+    </div>
+    <div>
+      <h4>Off-site</h4>
+      <nav class="footer-nav" aria-label="Off-site links">
+        <a class="ext" href="#faq">Gift Cards</a>
+        <a class="ext" href="#faq">Shirts &amp; Merch</a>
+        <a class="ext" href="#faq">Bookshop.org (new books)</a>
+        <a href="#sell-trade">Jobs</a>
+      </nav>
+    </div>
+    <div>
+      <h4>Follow the finds</h4>
+      <nav class="footer-nav" aria-label="Social links">
+        <a class="ext" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+        <a class="ext" href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a>
+        <a class="ext" href="https://www.facebook.com/McKayUsedBooksVirginia/" target="_blank" rel="noopener">Facebook</a>
+        <a href="#home">Newsletter</a>
+      </nav>
+    </div>
+  </div>
+  <div class="footer-base">
+    <div class="inner">
+      <span>8345 Sudley Road, Manassas, VA 20109 · the only location · est. 1983</span>
+      <span class="tag">Prototype redesign concept · not the live site</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

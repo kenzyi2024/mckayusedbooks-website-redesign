@@ -1,0 +1,8 @@
+# macOS
+.DS_Store
+
+# Editor / local tooling
+.claude/settings.local.json
+
+# Logs
+*.log
