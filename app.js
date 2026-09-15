@@ -53,8 +53,8 @@
     });
 
     if (s.ok) {
-      document.querySelectorAll("table.week tr[data-day]").forEach(function (tr) {
-        tr.classList.toggle("today", tr.getAttribute("data-day") === s.weekday);
+      document.querySelectorAll("[data-day]").forEach(function (row) {
+        row.classList.toggle("today", row.getAttribute("data-day") === s.weekday);
       });
     }
   }
@@ -117,4 +117,20 @@
     nav.addEventListener("click", function (e) { if (e.target.closest("a")) closeNav(); });
   }
   document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeNav(); });
+
+  /* ---------- Prototype form guard (Formspree) ---------------------------- */
+  // Forms POST to Formspree once a real form ID is filled in. Until then, the
+  // placeholder is intercepted so the demo confirms instead of erroring.
+  document.querySelectorAll("form[data-form]").forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      var action = form.getAttribute("action") || "";
+      if (action.indexOf("YOUR_FORM_ID") !== -1) {
+        e.preventDefault();
+        var note = form.querySelector("[data-formnote]") ||
+          (form.parentNode && form.parentNode.querySelector("[data-formnote]"));
+        if (note) note.textContent = "Thanks — noted. (Prototype: add a Formspree form ID to receive real submissions.)";
+        form.reset();
+      }
+    });
+  });
 })();
